@@ -621,6 +621,12 @@ top:-80px;
     .PI_painting{
         width: 15%;
     }
+    .PI_paintingMid{
+        left:0;
+    }
+    .PI_ShowInfo:nth-child(2) .PI_painting{
+        left:0;
+    }
     .view_title{
         width: 150px;
     }
