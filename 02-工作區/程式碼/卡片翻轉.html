@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card-wrap {
+        width: 20%;
+        height: 300px;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /*preserve the back when fliping*/
+        transform-style: preserve-3d;
+        transition: 0.5s all ease;
+        box-shadow: 0px 0px 10px rgba(10, 10, 0.8);
+    }
+
+    /*front card*/
+    .card-front {
+        position: absolute;
+        background: #E5C1C5;
+        width: 100%;
+        height: 100%;
+        /*hide backface*/
+        backface-visibility: hidden;
+        font-size: 1.5rem;
+    }
+
+    /*back card*/
+    .card-back {
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #E5C1C5;
+        /*hide backface*/
+        backface-visibility: hidden;
+        font-size: 1.5rem;
+
+        /*flip card-back behind card-front*/
+        transform: rotateY(180deg);
+    }
+
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+
+    .traffic_txt {
+        width: 90%;
+        display: block;
+        font-size: 20px;
+        margin: 50px auto 0;
+        text-align: center;
+    }
+
+    .TrafficInfo {
+        display: flex;
+        width: 100%;
+    }
+
+    .train_pic img {
+        width: 40%;
+        display: block;
+        margin: 10px auto 0;
+    }
+
+    .card-front h3 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="TrafficInfo">
+        <div class="card-wrap">
+            <div class="card">
+                <div class="card-front">
+                    <div class="train_pic">
+                        <img src="../../01-素材/火車.png" alt="">
+                    </div>
+                    <h3>搭乘火車</h3>
+                </div>
+                <div class="card-back">
+                    <div class="traffic_txt">
+                        於嘉義火車站(或後火車站)下車後，搭乘往蘭潭之市區66路(光臨我嘉線)的市區公車，於檜意森活村站下車步行約15分鐘即抵達。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-wrap">
+            <div class="card">
+                <div class="card-front">
+                    <div class="train_pic">
+                        <img src="../../01-素材/高鐵-1.png" alt="">
+                    </div>
+                    <h3>搭乘高鐵</h3>
+                </div>
+                <div class="card-back">
+                    <div class="traffic_txt">
+                        搭乘高鐵於高鐵嘉義站下車後可搭乘7211與7212brt於台鐵嘉義後站下車後，搭乘往蘭潭之市區66路(光臨我嘉線)的市區公車，於檜意森活村站下車後步行約15分鐘即抵達。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

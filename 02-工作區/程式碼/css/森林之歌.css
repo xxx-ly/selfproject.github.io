@@ -1,0 +1,659 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    /* outline: 1px solid red; */
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+
+}
+body{
+    background:#F2EEE5 ;
+    overflow-x: hidden;
+}
+
+/*-----導覽條-----*/
+.headerSection{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content:space-between;
+    background:white;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+h2{
+    font-size: 0;
+}
+.logo{
+    width: 335px;
+    padding-left: 50px;
+    display: grid;
+    
+}
+.logo img{
+    margin: auto;
+    width: 100%;
+}
+.NavBar{
+    width: 60%;
+}
+.MainMenu{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.MainLi{
+transition: .5s;
+}
+.MainLi::after{
+    content: '';
+    width: 0%;
+    display: block;
+    height: 5px;
+    background-color: #E5C1C5;
+    transition:  .2s .2s;
+}
+.MainLi:hover::after{
+    width: 100%;
+}
+.MainLi:hover{
+    background:#6ECEDA;
+}
+.MainA{
+    height: 75px;
+    display: block;
+    text-decoration: none;
+    padding: 0 20px;
+    color:#E5C1C5;
+    line-height: 80px;
+}
+.MainA .MainSection{
+    font-size: 15px;   
+}
+.MainLi:hover .MainSection{
+    color: white;
+}
+/*-----導覽條-----*/
+
+.contanier{
+    width: 80%;
+    margin:auto;
+    overflow-x: hidden;
+}
+/*-----banner-----*/
+
+#banner_point{
+width: 50px;
+height: 50px;
+position: absolute;
+top:-80px;
+}
+#banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top:100px;
+}
+.banner_info{
+    width: 50%;
+    display: grid;
+}
+.banner_title {
+    width: 90%;
+    margin: auto;
+}
+.banner_title img{
+    width: 100%;
+}
+.banner_swiper{
+    width: 50%;
+}
+.SwiperPhto{
+    width: 100%;
+}
+/*----swiper----*/
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+/*-----banner-----*/
+
+/*-------ParkIntorduction-----*/
+    #ParkIntorduction_point{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top:-80px;
+    }
+    #ParkIntorduction{
+        width: 100%;    
+        margin-top:50px;
+        position: relative;
+    }    
+    .PI_BackgroundPhto{
+        width: 100%;
+    }
+    .PI_intor{
+        width: 30%;
+        position: absolute;
+        top:0;
+        left:10px;
+    }
+    .PI_title img{ 
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .PI_txt{
+        width: 80%;
+        margin:0 auto;
+        padding: 10px 20px;
+        font-size: 15px;
+        background:rgb(187, 187, 187 , .5) ;
+    }
+    .PI_selection{
+        width: 40%;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        z-index: 2;
+        bottom:50%;
+        right:0;
+        text-align: center;
+        line-height: 50px;   
+    }
+    .PI_selection :nth-child(2){
+        margin: 0 10px;
+    }
+    .PI_selection a{
+        display: block;
+        text-decoration: none;
+        color:white;
+        transition: .5s;
+        background-color: rgb(187, 187, 187 , .8) ;;
+        border-radius: 5%;
+    }
+    .PI_selection a:hover{
+        background-color:#6ECEDA;
+        border-radius: 50%;
+    }
+    .PI_btn{
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+    }
+    #PI_info_point{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top:-50%;
+    }
+    .PI_info{
+        width: 100%;
+        background:#F2EAB4 ;
+        position: relative;
+        padding: 0 0 12% 0;
+    }
+    .PI_ShowInfo{
+        display: flex;
+        display: none;
+    }
+    .ation{
+        display: flex;
+    }
+
+    .PI_ShowPic{
+        width: 50%;
+    }
+    .PI_ShowPic img{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .PI_ShowTxt{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-self: center ;
+    }
+    .PI_ShowTxt p{
+        width: 70%;
+        font-size: 15px;
+        border-bottom: 3px solid #5D3A1A;
+    }
+    .PI_wave{
+        width: 100%;
+        position: absolute;
+        top:-7%;
+    }
+    .PI_tree{
+        width: 100%;
+        position: absolute;
+        bottom:-22%;
+    }
+/*-------ParkIntorduction-----*/
+
+/*-------view-----*/
+    #view_point{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top:-80px;
+    }    
+    #view{
+        width: 100%;
+        margin-top:50px;
+        position: relative;
+    }
+    .view_title{
+        width: 25%;
+        display: block;
+        margin:auto;
+        margin-bottom: 50px;
+    }
+    .view_container{
+        padding: 40px 20px;
+        background:#F2EAB4;
+    }
+    .view_item{
+        width: 100%;
+        display: flex;
+    }
+    .viewphtobox{
+        display: grid;
+        width: 60%;
+    }
+    .viewphtobox img{
+        width: 100%;
+        margin:auto;
+    }
+    .view_txt{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .view_txt h3{
+        color:#724559;
+        width: 100%;
+        margin:20px;
+    }
+    .view_txt p{
+        width: 80%;
+        padding: 15px;
+        background:#6ecdda41 ;
+        border-radius: 10%;
+    }
+    .view_txt a{
+        text-decoration: none;
+    }
+/*-------view-----*/
+
+/*---LocalFood----*/
+    #LocalFood_point{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top:-80px;
+    }  
+    #LocalFood{
+        width: 100%;
+        margin-top:50px;
+        max-width: 1440px;
+        position: relative;
+    }
+    .LocalFood_title{
+        width: 25%;
+        display: block;
+        margin:auto;
+        margin-bottom: 50px;
+    }
+    .FoodItme{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .FoodPic{
+        width: 55%;
+        flex-shrink: 0;
+    }
+    .FoodPic img{
+        width: 100%;
+        vertical-align: middle;
+    }
+    .FoodTxt{
+        width: 55%;
+        background-color:#f0e8b4c0;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 1;
+        padding:20px;
+        font-size: 15px;
+    }
+    .FoodTxt h3{
+        margin-bottom: 10px;
+        color:#724559;
+    }
+    .FoodItme>:first-child{
+        margin-right: -10%;
+    }
+    .FoodItme:nth-child(4) .FoodTxt{
+        order: -1;
+        margin-right: -10%;    
+    }
+    .FoodItme:nth-child(6) .FoodTxt{
+        order: -1;
+        margin-right: -10%;
+    }
+/*---LocalFood----*/
+
+/*---traffic_title----*/
+    #traffic_point{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top:-80px;
+    }  
+    #traffic{
+        width: 100%;
+        position: relative;
+    }
+    .traffic_title{
+        width: 20%;
+        display: block;
+        margin:auto;
+        margin-bottom: 50px; 
+    }
+    .googlemap{
+        width: 40%;
+    }
+    .TrafficInfo {
+        width: 100%;
+        background:#F2EAB4 ;
+        padding: 20px;
+        display: flex;
+    }
+    .cardbox{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    /*front card*/
+    .card-front {
+        position: absolute;
+        background: #E5C1C5;
+        width: 100%;
+        height: 100%;
+        /*hide backface*/
+        backface-visibility: hidden;
+        font-size: 1.5rem;
+    }
+    .train_info img {
+        display: block;
+        width: 45%;
+        margin:  30px auto;
+    }
+    
+    .train_info h3 {
+        text-align: center;
+        margin:auto;
+        font-size: 20px;
+        color:#4d2e3c;
+    }
+    .card-wrap {
+        width: 50%;
+        position: relative;
+        margin-right: 20px;
+    }
+    .card {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        /*preserve the back when fliping*/
+        transform-style: preserve-3d;
+        transition: 0.5s all ease;
+        box-shadow: 0px 0px 10px rgba(10, 10, 0.8);
+    }
+    
+    /*back card*/
+    .card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #E5C1C5;
+        backface-visibility: hidden;
+        font-size: 1.5rem;
+        transform: rotateY(180deg);
+    }
+    .traffic_txt {
+        display: block;
+        width: 100%;
+        font-size: 20px;
+        margin-top:50px;
+        padding:10px 20px;
+        text-align: center;
+    }
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+    .train_animation{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        background-image: url(../../../01-素材/背景圖/tree-04.png);
+        background-size: contain;
+        background-position: center;
+    }
+    .traffic_phone{
+        display: none;
+    }
+/*---traffic----*/
+    footer{
+        width: 100%;
+        height: 80px;
+        background:#F2EAB4 ;
+    }
+/*-------RWD---------*/
+@media(max-width:992px){
+    .headerSection{
+        justify-content: center;
+    }
+    .logo{
+        width: 30%;
+        padding:unset;
+    }
+
+    .NavBar{
+        display: none;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        right:0;
+        width: 50%;
+        background:#eee5cf;
+        overflow-x: hidden;
+    }
+    .MainMenu{
+        display: block;    
+    }
+    .MainA{
+        padding:0;
+        text-align: center;
+        margin-top:10px;
+        color:#5D3A1A;
+    }
+    .MainLi::after{
+        display: none;
+    }
+
+    .NavBar.active{
+        display: block;
+    }
+
+    .burgar_btn {
+        display: block;
+        position: absolute;
+        top:15px;
+        right: 10px;
+    }
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    .traffic_txt{
+        margin-top:20px;
+    }
+}
+@media (max-width:768px){
+    #banner{
+        display: block;
+        height: 53vh;
+    }
+    .banner_info{
+        width: 100%;
+    }
+    .banner_title{
+        width: 70%;
+    }
+    .banner_swiper{
+        width: 100%;  
+    }
+    .SwiperPhto{
+        width: 60%;
+    }
+    .PI_intor{
+        width: 100%;
+        position: unset;
+    }
+    .PI_txt{
+        width: 100%;
+    }
+    .PI_title img{
+        width: 30%;
+    }
+    .PI_selection{
+        width: 100%;
+        bottom:40%;
+    }
+    .PI_selection{
+        display: none;
+    }
+    .PI_wave{
+        top:-1%;
+    }
+    .PI_tree{
+        bottom:-4%;
+    }
+    .PI_ShowInfo{
+        display: block;
+        margin-top:10px;
+    }
+    .PI_ShowPic{
+        width: 100%;
+    }
+    .PI_ShowTxt{
+        text-align: center;
+        margin-top:10px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .view_title{
+        width: 30%;
+    }
+    .view_item{
+        display: block;
+    }
+    .view_txt{
+        width: 100%;
+    }
+    .viewphtobox {
+        width: 100%;
+    }
+    .LocalFood_title {
+        width: 30%;
+    }
+    .FoodItme{
+        display: block;
+    }
+    .FoodPic{
+        width: 100%;
+    }
+    .FoodTxt{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .traffic_title{
+        width: 25%;
+    }
+    .TrafficInfo{
+        display: block;
+    }
+    .cardbox{
+        display: none;
+    }
+    .traffic_phone{
+        display:block;
+        width: 100%;
+    }
+    .traffic_item{
+       text-align: center;
+        background:#E5C1C5;
+        margin-bottom: 10px;
+        border-radius: 2%;
+    }
+    .traffic_item h3{
+        font-size: 20px;
+        margin:10px auto;
+        color: #724559;
+    }
+    .traffic_item p{
+        font-size: 15px;
+        padding:10px 50px;
+    }
+    .googlemap{
+        width: 100%;
+    }
+    
+}
