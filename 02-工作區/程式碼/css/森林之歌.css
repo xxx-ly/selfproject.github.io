@@ -81,7 +81,7 @@ h2{
 .contanier{
     width: 80%;
     margin:auto;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 /*-----banner-----*/
 
@@ -690,6 +690,6 @@ top:-80px;
         margin-bottom: 20px;
     }
     .SwiperPhto{
-        width: 100%;
+        width: 80%;
     }
 } 
