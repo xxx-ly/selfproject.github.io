@@ -2,12 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;  
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 html {
     scroll-behavior: smooth;
-    font-size: 10px;
-
 }
 body{
     background:#F2EEE5 ;
@@ -83,7 +81,7 @@ h2{
 .contanier{
     width: 80%;
     margin:auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 /*-----banner-----*/
 
@@ -97,7 +95,7 @@ top:-80px;
     width: 100%;
     height: 100vh;
     display: flex;
-    margin-top:100px;
+    margin-top:60px;
 }
 .banner_info{
     width: 50%;
@@ -219,6 +217,7 @@ top:-80px;
     .PI_ShowInfo{
         display: flex;
         display: none;
+        position: relative;
     }
     .ation{
         display: flex;
@@ -242,6 +241,12 @@ top:-80px;
         width: 70%;
         font-size: 15px;
         border-bottom: 3px solid #5D3A1A;
+    }
+    .PI_painting{
+        width: 8%;
+        position: absolute;
+        bottom:0;
+        right:0;
     }
     .PI_wave{
         width: 100%;
@@ -268,10 +273,10 @@ top:-80px;
         position: relative;
     }
     .view_painting{
-        width: 150px;
+        width: 10%;
         position: absolute;
-        bottom: 0;
-        right:0;
+        bottom: 0px;
+        right:0px;
         z-index: 20;
     }
     .view_title{
@@ -306,7 +311,6 @@ top:-80px;
     .view_txt h3{
         color:#724559;
         width: 100%;
-        margin:20px;
     }
     .view_txt p{
         width: 80%;
@@ -316,6 +320,7 @@ top:-80px;
     }
     .view_txt a{
         text-decoration: none;
+        margin:10px  auto;
     }
 /*-------view-----*/
 
@@ -343,6 +348,12 @@ top:-80px;
         display: flex;
         align-items: center;
         margin-bottom: 50px;
+    }
+    .LocalFood-painting{
+        width: 12%;
+        position: absolute;
+        bottom:-65px;
+        right:0;
     }
     .FoodPic{
         width: 55%;
@@ -483,7 +494,9 @@ top:-80px;
     footer{
         width: 100%;
         height: 80px;
+        line-height: 80px;
         background:#F2EAB4 ;
+        text-align: center;
     }
 /*-------RWD---------*/
 @media(max-width:992px){
@@ -514,6 +527,9 @@ top:-80px;
         margin-top:10px;
         color:#5D3A1A;
     }
+    .MainA:hover{
+        border-bottom: 5px solid #E5C1C5 ;
+    }
     .MainLi::after{
         display: none;
     }
@@ -521,25 +537,23 @@ top:-80px;
     .NavBar.active{
         display: block;
     }
-
     .burgar_btn {
         display: block;
         position: absolute;
         top:10px;
         right: 10px;
     }
-      .bar1, .bar2, .bar3 {
+    .bar1, .bar2, .bar3 {
         width: 35px;
         height: 5px;
         background-color: #333;
         margin: 6px 0;
         transition: 0.4s;
       }
-      .change .bar1 {
+    .change .bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
     }
-
     .change .bar2 {
         opacity: 0;
     }
@@ -548,8 +562,18 @@ top:-80px;
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
+    #PI_info_point{
+        top:-60%;
+    }
     .traffic_txt{
         margin-top:20px;
+    }
+    .traffic_txt {
+        width: 100%;
+        font-size: 15px;
+        margin-top:30px;
+        padding:10px 20px;
+        text-align: center;
     }
 }
 @media (max-width:768px){
@@ -563,14 +587,11 @@ top:-80px;
     .banner_info{
         width: 100%;
     }
-    .banner_title{
-        width: 300px;
-    }
     .banner_swiper{
         width: 100%;  
     }
     .SwiperPhto{
-        width: 60%;
+        width: 50%;
     }
     .PI_intor{
         width: 100%;
@@ -582,10 +603,6 @@ top:-80px;
     }
     .PI_title img{
         width:150px;
-    }
-    .PI_selection{
-        width: 100%;
-        bottom:40%;
     }
     .PI_selection{
         display: none;
@@ -609,7 +626,9 @@ top:-80px;
         padding: 10px;
         width: 100%;
     }
-    
+    .PI_painting{
+        width: 15%;
+    }
     .view_title{
         width: 150px;
     }
@@ -621,6 +640,10 @@ top:-80px;
     }
     .viewphtobox {
         width: 100%;
+    }
+    .view_painting{
+        width: 15%;
+        bottom: -10px;
     }
     .LocalFood_title {
         width: 150px;
@@ -673,5 +696,8 @@ top:-80px;
     }
     .banner_info{
         margin-bottom: 20px;
+    }
+    .SwiperPhto{
+        width: 100%;
     }
 } 
